@@ -1,0 +1,371 @@
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Custom styles for the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px; /* Adjust padding to control navbar height */
+  background-color: #ffffff95; /* Navbar background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.071); /* Optional box-shadow */
+  position: fixed; /* Fix navbar to the top */
+  top: 0; /* Ensure it's at the very top of the screen */
+  left: 0; /* Align navbar to the left */
+  right: 0; /* Make sure navbar spans the full width */
+  z-index: 5; /* Keep navbar above other content */
+  height: 10px; /* Fixed height for the navbar */
+}
+
+#mainnav {
+  background-color: rgba(255, 255, 255, 0.295); /* Light color with transparency */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light border color */
+}
+
+.navbar-brand {
+  font-size: 1rem; /* Adjust the brand name size */
+  font-weight: bold; /* Make the brand name bold */
+}
+
+#mainnav .navbar-nav .nav-link {
+  font-size: 1rem; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #000000; /* Text color for links */
+  margin-right: 1rem; /* Add space between links */
+  transition: color 0.3s ease; /* Add a smooth transition effect */
+}
+
+#mainnav .navbar-nav .nav-link:hover {
+  color: #ff8400; /* Text color on hover */
+}
+
+.navbar-nav .nav-item + .nav-item {
+  margin-left: 1rem; /* Optional: Add space between nav items */
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+/* BODY */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url('../images/mainbg.jpg'); /* Path to your image */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  margin: 0;
+  font-family: Arial, sans-serif; /* Optional: Set a font for your content */
+  color: #ffffffc7; /* Optional: Set a font color for better contrast */
+}
+
+
+/* WELCOME */
+.py-6 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important ;
+}
+
+.py7 {
+  padding-top: 9rem !important;
+  padding-bottom: 9rem !important ;
+}
+
+h2{
+color: #000;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  text-align: justify;
+}
+
+#hero {
+  background-image: url('../images/bananabg.png'); /* Replace with the path to your image */
+  background-size: cover; /* Ensure the background covers the whole section */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Make the background fixed during scrolling */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#insidehero {
+  background: rgba(255, 255, 255, 0.361); /* Add a semi-transparent background for readability */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center text for smaller screens */
+}
+
+#insidehero h2, #insidehero p {
+  color: #000; /* Ensure text is readable */
+}
+
+#insidehero h2 {
+  font-size: 2.5rem; /* Adjust heading size */
+  font-weight: bold; /* Make the text bold */
+}
+
+#insidehero p {
+  font-size: 1.25rem; /* Adjust paragraph text size */
+  text-align: justify; /* Justify the text */
+}
+
+
+@media (max-width: 768px) {
+  #insidehero {
+      padding: 2rem; /* Adjust padding for smaller screens */
+      max-width: 100%; /* Adjust the width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #insidehero {
+      padding: 1rem; /* Adjust padding for very small screens */
+      max-width: 100%; /* Full width for very small screens */
+  }
+}
+
+/* ABOUT US */
+h1{
+  position: absolute;
+  background-color: rgba(11, 14, 25, 0.313);
+  color: #000000;
+  width: 50%;
+  margin-left: 26%;
+}
+
+#about {
+  background-image: url("/images/mainbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#aboutcover h1 {
+  font-size: 3rem; /* Adjust heading size */
+  font-weight: bold; /* Make the text bold */
+  color: #000; /* Ensure the text is black */
+}
+
+.image-container img {
+  max-width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text-container p {
+  font-size: 1.5rem; /* Increase the font size */
+  margin-bottom: 1.5rem; /* Adjust the margin as needed */
+  margin-top: 2rem;
+}
+
+#aboutlogo a {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+#aboutlogo a:hover {
+  color: #0766cc;
+}
+
+.row.align-items-center {
+  align-items: center; /* Vertically centers the content in the row */
+}
+
+/* PROMOTIONAL VIDEO */
+#video {
+  background-color: #4353943b;
+}
+
+#video h2 {
+  font-size: 3rem; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #000; /* Make the text black */
+  margin-bottom: 2rem; /* Add some space below the heading */
+  text-align: center;
+}
+
+/* VISION & MISSION */
+#missionVision .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content */
+}
+
+#missionVision h2 {
+  font-size: 3rem; /* Increase the font size */
+  font-weight: bold; /* Make the heading bold */
+  color: #000; /* Make the text black */
+  margin-bottom: 2rem; /* Space below heading */
+  text-align: center; /* Center the text */
+}
+
+#missionVision p {
+  font-size: 1.5rem; /* Increase font size */
+  font-weight: bold; /* Make the text bold */
+  color: #000; /* Make the text black */
+  text-align: justify; /* Justify the text */
+  margin-bottom: 2rem; /* Space below paragraph */
+}
+
+#missionVision h2 + p {
+  margin-top: 2rem; /* Increase space between Vision and Mission */
+}
+
+#missionVision img {
+  max-width: 100%; /* Ensure the image fits within the column */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Center the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+
+/* OUR PRODUCTS */
+#products h2 {
+  font-size: 3rem; /* Increase font size */
+  font-weight: bold; /* Make the text bold */
+  color: #000; /* Make the text black */
+  margin-bottom: 2rem; /* Add some space below the heading */
+}
+
+#products img {
+  max-width: 70%; /* Ensure the image fits within the container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Center the image if it's smaller than the container */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+
+/* CONTACTS */
+#contact h2, #contact h3, #contact h4 {
+  color: #000; /* Make text black */
+}
+
+#contact h2 {
+  position: absolute;
+  font-size: 2.5rem;
+  margin-left: 2%;
+  margin-right: 50%;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+#contact h3 {
+  margin-top: 2rem; /* Space above subheadings */
+  font-weight: bold;
+}
+
+#contact .d-flex { 
+  margin-top: 3rem;
+}
+
+#contact h4 {
+  margin-bottom: 3rem; /* Space below subheadings */
+}
+
+#contacticons a {
+  font-size: 2rem; /* Increase icon size */
+  margin-right: 1rem; /* Space between icons */
+  color: #000; /* Icon color */
+}
+
+#contacticons a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.d-flex.justify-content-around > div {
+  flex: 1;
+  text-align:center;
+}
+
+
+
+/* BUTTONS */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ffd700; /* Button background color */
+  color: #0e1428; /* Button text color */
+}
+
+.btn-primary:hover {
+  background-color: #ffa500; /* Button background color on hover */
+  color: #0e1428; /* Button text color on hover */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+  .col-md-6.text-center img {
+      margin-top: 20px; /* Add margin to adjust vertical placement */
+  }
+}
+
+
+/* FOOTER */
+#footer {
+  background-color: #f8f9fa; /* Optional: Add background color */
+}
+
+#footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#footer p {
+  margin: 0; /* Remove default margin */
+  font-weight: bold; /* Optional: Make text bold */
+  color: #000; /* Make text black */
+}
+
+
+/* BACK TO TOP BUTTON */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: #0e1428;
+  color: #ffd700;
+  border: 1px solid #ffd700;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+.back-to-top i {
+  font-size: 24px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffa500; /* Change to your desired color */
+}
